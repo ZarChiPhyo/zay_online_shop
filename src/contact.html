@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    
+    <div class="header shadow-xl">  
+        <nav class="navbar flex flex-row justify-between align-middle content-center text-center items-center py-5 bg-white mx-auto w-11/12">
+            <div class="text-center w-3/12 items-center align-middle ">
+                <span class="font-semibold text-5xl text-emerald-600">Zay</span>
+            </div>
+            <div class="align-middle items-center w-5/12">
+                <ul class="flex flex-row justify-between items-center">
+                    <li class="hover:text-green-500 text-xl font-light text-center align-middle"><a href="index.html">Home</a></li>
+                    <li class="hover:text-green-500 text-xl font-light text-center align-middle"><a href="about.html">About</a></li>
+                    <li class="hover:text-green-500 text-xl font-light text-center align-middle"><a href="shop.html">Shop</a></li>
+                    <li class="hover:text-green-500 text-xl font-light text-center align-middle"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-row justify-center w-4/12">
+                <div class="px-3">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </div>
+                <div class="px-3 relative">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <span class="bg-slate-400 rounded-2xl w-5 absolute bottom-3 left-6">7</span>
+                </div>
+                <div class="px-3 relative">
+                    <i class="fa-solid fa-user text-xl"></i>
+                    <span class="bg-slate-400 rounded-full w-7 absolute bottom-3 left-6">+99</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="contact w-full h-64 flex justify-center items-center" style="background-color: #e9eef5 ;">
+        <div class="w-4/5 mx-auto text-center">
+            <h2 class="text-6xl font-thin">Contact Us</h2>
+            <p class="text-xl font-light mt-5">Proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum <br> dolor sit amet.</p>
+        </div>
+    </div>
+
+    <div class="location w-full h-80" style="background-color: #ddd;">
+        <div class="row relative flex flex-col justify-center items-center h-full">
+            <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" type="button"><i class="text-4xl text-blue-950 fa-solid fa-location-dot"></i></button>
+            
+            <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-1 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="p-2 w-full max-w-md max-h-full">
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <button type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                        <div class="p-2 md:p-5 text-center">
+                            <p class="text-2xl"><span class="font-semibold">Zay</span> eCommerce Template <br>Location</p>
+                            <!-- <button data-modal-hide="popup-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">No, cancel</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-1 left-0 flex flex-col justify-between">
+                <p class=" mx-2 bg-white border border-gray-400"><i class="text-sm p-2 fa-solid fa-plus"></i></p>
+                <p class=" mx-2 bg-white border border-gray-400"><i class="text-sm p-2 fa-solid fa-minus"></i></p>
+            </div>
+        </div>
+    </div>  
+    
+    <div class="form w-full h-lvh">
+        <div class="w-4/5 mx-auto my-16">
+            <form action="">
+                <div class="w-4/5 mx-auto flex flex-row justify-between h-auto">
+                    <div class="w-1/2 mx-auto">
+                        <div class="my-3"><label for="name" class="text-xl font-thin">Name</label></div>
+                        <div class="pr-2"><input type="text" placeholder="Name" class="border border-gray-400 w-full mx-auto rounded-md font-light text-lg"></div>
+                    </div>
+                    <div class="w-1/2 mx-auto">
+                        <div class="my-3"><label for="name" class="text-xl font-thin">Email</label></div>
+                        <div class="pl-2"><input type="text" placeholder="Email" class="border border-gray-400 w-full mx-auto rounded-md font-light text-lg"></div>
+                    </div>
+                </div>
+                <div class="w-4/5 mx-auto">
+                    <div class="my-3"><label for="" class="text-xl font-thin ">Subject</label></div>
+                    <div><input type="text" name="" id="" placeholder="Subject" class="border border-gray-400 w-full font-light rounded-md"></div>
+                </div>
+                <div class="w-4/5 mx-auto mb-3">
+                    <div class="my-3"><label for="message" class="text-xl font-thin ">Message</label></div>
+                    <div><textarea  name="" id="" cols="30" rows="10" class="p-2 border border-gray-400 text-xl font-thin w-full" placeholder="Message"></textarea></div>
+                </div>
+                <div class="w-4/5 mx-auto flex justify-end ">
+                    <a type="button" class="bg-emerald-500 text-white text-xl font-semibold px-3 py-2 rounded-md">let's Talk</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer bg-gray-950 h-dvh w-full shadow-md">
+        <div class="row border-b border-gray-700 py-7 text-gray-300 gap-5 flex flex-row justify-between w-5/6 mx-auto">
+            <div class="col mx-auto h-full w-1/3 mt-3">
+                <div class="border-b py-4 border-gray-700 w-full">
+                    <h2 class="font-semibold text-3xl text-emerald-500">Zay Shop</h2>
+                </div>
+                <ul class="pt-4 text-lg">
+                    <li class="py-2"><i class="text-xl mr-2 fa-solid fa-location-pin"></i>123 Consectetur at ligula 10660</li>
+                    <li class="py-2"><a href=""><i class="text-xl mr-2 fa-solid fa-phone-flip"></i>010-020-0340</a></li>
+                    <li class="py-2"><a href=""><i class="text-xl mr-2 fa-solid fa-envelope"></i>info@company.com</a></li>
+                </ul>
+            </div>
+            <div class="col mx-auto h-full w-1/3 mt-3">
+                <div class="border-b py-4 border-gray-700 w-full">
+                    <h2 class="font-semibold text-3xl ">Products</h2>
+                </div>
+                <ul class="pt-4 text-lg">
+                    <li class="py-2 hover:text-green-500"><a href="">Luxury</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">Sport Wear</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">Men's Shoes</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">Women's Shoes</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">Popular Dress</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">Gym Accessories</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">Sport Shoes</a></li>
+                </ul>
+            </div>
+            <div class="col mx-auto h-full w-1/3 mt-3">
+                <div class="border-b py-4 border-gray-700 w-full">
+                    <h2 class="font-semibold text-3xl ">Further Info</h2>
+                </div>
+                <ul class="pt-4 text-lg">
+                    <li class="py-2 hover:text-green-500"><a href="">Home</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">About Us</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">Shop Location</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">FQAs</a></li>
+                    <li class="py-2 hover:text-green-500"><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row flex flex-grow-1 flex-row w-3/4 mx-auto justify-between">
+            <div class="contact-logo py-10">
+                <ul class="flex flex-row justify-center items-center h-full">
+                    <a href="" class=""><li class=" hover:bg-white border border-gray-500 rounded-full w-auto px-3 py-2"><i class="hover:text-gray-900 text-gray-300 text-2xl fa-brands fa-facebook-f"></i></li></a>
+                    <a href="" class=""><li class=" hover:bg-white border border-gray-500 rounded-full w-auto px-2 py-2 mx-5"><i class="hover:text-gray-900 text-gray-300 text-2xl fa-brands fa-instagram"></i></li></a>
+                    <a href="" class=""><li class=" hover:bg-white border border-gray-500 rounded-full w-auto px-2 py-2 mr-5"><i class="hover:text-gray-900 text-gray-300 text-2xl fa-brands fa-twitter"></i></li></a>
+                    <a href="" class=""><li class=" hover:bg-white border border-gray-500 rounded-full w-auto p-2 "><i class="hover:text-gray-900 text-gray-300 text-2xl fa-brands fa-linkedin"></i></a></li></a>
+                </ul>
+            </div>
+            <div class="mail-box flex flex-row justify-between items-center content-end">
+                <input type="email" name="" id="" class="py-2 bg-transparent text-lg font-thin" placeholder="Email Address">
+                <button type="button" class="bg-emerald-600 text-lg text-white font-thin px-4 py-2 border border-gray-500 text-center">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/340c8ea4f7.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>

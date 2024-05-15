@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+        <link rel="stylesheet" href="../public/style.css">
+    </head>
+    <body>
+        <div class="header shadow-xl">  
+            <nav class="navbar flex flex-row justify-between align-middle content-center text-center items-center py-5 bg-white mx-auto w-11/12">
+                <div class="text-center w-3/12 items-center align-middle ">
+                    <span class="font-semibold text-5xl text-emerald-600">Zay</span>
+                </div>
+                <div class="align-middle items-center w-5/12">
+                    <ul class="flex flex-row justify-between items-center">
+                        <li class="hover:text-green-500 text-xl font-light text-center align-middle"><a href="index.html">Home</a></li>
+                        <li class="hover:text-green-500 text-xl font-light text-center align-middle"><a href="about.html">About</a></li>
+                        <li class="hover:text-green-500 text-xl font-light text-center align-middle"><a href="shop.html">Shop</a></li>
+                        <li class="hover:text-green-500 text-xl font-light text-center align-middle"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-row justify-center w-4/12">
+                    <div class="px-3">
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    </div>
+                    <div class="px-3 relative">
+                        <i class="fa-solid fa-cart-shopping text-xl"></i>
+                        <span class="bg-slate-400 rounded-2xl w-5 absolute bottom-3 left-6">7</span>
+                    </div>
+                    <div class="px-3 relative">
+                        <i class="fa-solid fa-user text-xl"></i>
+                        <span class="bg-slate-400 rounded-full w-7 absolute bottom-3 left-6">+99</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="slide h-dvh relative  overflow-hidden" style="background-color: #efefef;" data-carousel="slide">
+            <div>
+                <div class="hidden w-full " data-carousel-item>
+                    <div class="w-3/4 mx-auto">
+                        <div class=" h-full flex flex-row justify-center items-center" >
+                            <div class="w-1/2">
+                                <h2 class="text-emerald-500 text-5xl"><span class="text-emerald-600 font-semibold">Zay</span> <span class="font-thin">eCommerce</span></h2>
+                                <p class="font-light text-3xl my-2">Tiny and Perfect eCommerce <br> Template</p>
+                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, veritatis explicabo animi porro et ipsum quae temporibus sapiente consequatur? Minus maxime nobis, ipsam ea pariatur possimus accusantium vel cumque numquam?</p>
+                            </div>
+                            <div class="w-1/2">
+                                <img src="../img/banner_img_01.jpg" alt="" class="w-full">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="hidden w-full" data-carousel-item>
+                    <div class="w-3/4 mx-auto">
+                        <div class=" h-full mx-auto flex flex-row justify-center items-center" >
+                            <div class="w-1/2">
+                                <h2 class="text-emerald-500 text-5xl"><span class="text-emerald-600 font-semibold">Zay</span> <span class="font-thin">eCommerce</span></h2>
+                                <p class="font-light text-3xl my-2">Tiny and Perfect eCommerce <br> Template</p>
+                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, veritatis explicabo animi porro et ipsum quae temporibus sapiente consequatur? Minus maxime nobis, ipsam ea pariatur possimus accusantium vel cumque numquam?</p>
+                            </div>
+                            <div class="w-1/2">
+                                <img src="../img/banner_img_02.jpg" alt="" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="hidden w-full" data-carousel-item>
+                    <div class="w-3/4 mx-auto">
+                        <div class="h-full mx-auto flex flex-row justify-center items-center" >
+                            <div class="w-1/2">
+                                <h2 class="text-emerald-500 text-5xl"><span class="text-emerald-600 font-semibold">Zay</span> <span class="font-thin">eCommerce</span></h2>
+                                <p class="font-light text-3xl my-2">Tiny and Perfect eCommerce <br> Template</p>
+                                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, veritatis explicabo animi porro et ipsum quae temporibus sapiente consequatur? Minus maxime nobis, ipsam ea pariatur possimus accusantium vel cumque numquam?</p>
+                            </div>
+                            <div class="w-1/2">
+                                <img src="../img/banner_img_03.jpg" alt="" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-10 h-1 rounded-sm bg-emerald-600 mr-2" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-10 h-1 rounded-sm bg-emerald-600 " aria-current="true" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-10 h-1 rounded-sm bg-emerald-600 ml-2" aria-current="true" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10  dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-10 h-10 text-green-600 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-10 h-10 text-green-600 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+        <div class="categories w-3/4 mx-auto bg-white h-dvh">
+            <div class="row text-center pt-10 my-9">
+                <p class="text-5xl font-thin">Categories of The Month</p>
+                <p class="text-xl py-4 font-light">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui <br>officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="h-screen flex flex-row justify-center justify-items-center w-full">
+                <div class="place-items-center">
+                    <img src="../img/category_img_01.jpg" alt="" class="border border-1 border-gray-200 rounded-full w-auto">
+                    <p class="my-3 text-center text-xl font-semibold">Watches</p>
+                    <a href="" class="pl-24"><button type="button" class="place-self-center text-center bg-emerald-600 py-2 px-3 rounded-md">Go Shop</button></a>
+                </div>
+                <div class=" place-items-center mx-20">
+                    <img src="../img/category_img_02.jpg" alt="" class="border border-1 border-gray-200 rounded-full w-auto">
+                    <p class="my-3 text-center text-xl font-semibold">Shoes</p>
+                    <a href="" class="pl-24"><button type="button" class="text-center bg-emerald-600 py-2 px-3 rounded-md items-center">Go Shop</button></a>
+                </div>
+                <div class="place-items-center">
+                    <img src="../img/category_img_03.jpg" alt="" class="border border-1 border-gray-200 rounded-full w-auto">
+                    <p class="my-3 text-center text-xl font-semibold">Accessories</p>
+                    <a href="" class="pl-24"><button type="button" class="text-center bg-emerald-600 py-2 px-3 rounded-md items-center">Go Shop</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-product w-full h-auto py-11" style="background-color: #efefef;">
+            <div class="row text-center py-10">
+                <p class="text-5xl font-thin">Feature Product</p>
+                <p class="font-light my-5 text-xl">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <br> pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+            <div class="row gap-7 w-5/6 flex flex-row justify-between mx-auto justify-items-center">
+                <div class="cart border border-1 border-gray-300 shadow-lg w-1/3">
+                    <a href="">
+                        <img src="../img/feature_prod_01.jpg" alt="" class="h-1/2 w-full">
+                    </a>
+                    <div class="px-4 bg-white w-full pb-4">
+                        <div class="star py-2 flex flex-row justify-between">
+                            <p>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-slate-300"></i>
+                                <i class="fa-solid fa-star text-gray-300"></i>
+                            </p>
+                            <p class="">$240.00</p>
+                        </div>
+                        <div>
+                            <a href=""><p class="text-3xl font-light my-3">Gym Weight</p></a>
+                            <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.</p>
+                        </div>
+                        <div class="mt-9 w-full">
+                            <p class="text-xl font-thin text-gray-300">Reviews(24)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart border border-1 border-gray-300 shadow-lg w-1/3">
+                    <a href="">
+                        <img src="../img/feature_prod_02.jpg" alt="" class="h-1/2 w-full">
+                    </a>
+                    <div class="px-4 bg-white w-full pb-4">
+                        <div class="star py-2 flex flex-row justify-between">
+                            <p>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-slate-300"></i>
+                                <i class="fa-solid fa-star text-gray-300"></i>
+                            </p>
+                            <p class="">$48.00</p>
+                        </div>
+                        <div>
+                            <a href=""><p class="text-3xl font-light my-3">Cloud Nike Shoes</p></a>
+                            <p class="text-xl font-light">Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.</p>
+                        </div>
+                        <div class="mt-9">
+                            <p class="text-xl font-thin text-gray-300">Reviews(48)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart border border-1 border-gray-300 shadow-lg w-1/3">
+                    <a href="">
+                        <img src="../img/feature_prod_03.jpg" alt="" class="h-1/2 w-full">
+                    </a>
+                    <div class="px-4 bg-white w-full pb-4">
+                        <div class="star py-2 flex flex-row justify-between">
+                            <p>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                                <i class="fa-solid fa-star text-yellow-300"></i>
+                            </p>
+                            <p class="">$360.00</p>
+                        </div>
+                        <div>
+                            <a href=""><p class="text-3xl font-light my-3">Summer Addides Shoes</p></a>
+                            <p class="text-xl font-light">Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.</p>
+                        </div>
+                        <div class="mt-9">
+                            <p class="text-xl font-thin text-gray-300">Reviews(74)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer bg-gray-950 h-dvh w-full shadow-md">
+            <div class="row border-b border-gray-700 py-7 text-gray-300 gap-5 flex flex-row justify-between w-5/6 mx-auto">
+                <div class="col mx-auto h-full w-1/3 mt-3">
+                    <div class="border-b py-4 border-gray-700 w-full">
+                        <h2 class="font-semibold text-3xl text-emerald-500">Zay Shop</h2>
+                    </div>
+                    <ul class="pt-4 text-lg">
+                        <li class="py-2"><i class="text-xl mr-2 fa-solid fa-location-pin"></i>123 Consectetur at ligula 10660</li>
+                        <li class="py-2"><a href=""><i class="text-xl mr-2 fa-solid fa-phone-flip"></i>010-020-0340</a></li>
+                        <li class="py-2"><a href=""><i class="text-xl mr-2 fa-solid fa-envelope"></i>info@company.com</a></li>
+                    </ul>
+                </div>
+                <div class="col mx-auto h-full w-1/3 mt-3">
+                    <div class="border-b py-4 border-gray-700 w-full">
+                        <h2 class="font-semibold text-3xl ">Products</h2>
+                    </div>
+                    <ul class="pt-4 text-lg">
+                        <li class="py-2 hover:text-green-500"><a href="">Luxury</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">Sport Wear</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">Men's Shoes</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">Women's Shoes</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">Popular Dress</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">Gym Accessories</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">Sport Shoes</a></li>
+                    </ul>
+                </div>
+                <div class="col mx-auto h-full w-1/3 mt-3">
+                    <div class="border-b py-4 border-gray-700 w-full">
+                        <h2 class="font-semibold text-3xl ">Further Info</h2>
+                    </div>
+                    <ul class="pt-4 text-lg">
+                        <li class="py-2 hover:text-green-500"><a href="">Home</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">About Us</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">Shop Location</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">FQAs</a></li>
+                        <li class="py-2 hover:text-green-500"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row flex flex-grow-1 flex-row w-3/4 mx-auto justify-between">
+                <div class="contact-logo py-10">
+                    <ul class="flex flex-row justify-center items-center h-full">
+                        <a href="" class=""><li class=" hover:bg-white border border-gray-500 rounded-full w-auto px-3 py-2"><i class="hover:text-gray-900 text-gray-300 text-2xl fa-brands fa-facebook-f"></i></li></a>
+                        <a href="" class=""><li class=" hover:bg-white border border-gray-500 rounded-full w-auto px-2 py-2 mx-5"><i class="hover:text-gray-900 text-gray-300 text-2xl fa-brands fa-instagram"></i></li></a>
+                        <a href="" class=""><li class=" hover:bg-white border border-gray-500 rounded-full w-auto px-2 py-2 mr-5"><i class="hover:text-gray-900 text-gray-300 text-2xl fa-brands fa-twitter"></i></li></a>
+                        <a href="" class=""><li class=" hover:bg-white border border-gray-500 rounded-full w-auto p-2 "><i class="hover:text-gray-900 text-gray-300 text-2xl fa-brands fa-linkedin"></i></a></li></a>
+                    </ul>
+                </div>
+                <div class="mail-box flex flex-row justify-between items-center content-end">
+                    <input type="email" name="" id="" class="py-2 bg-transparent text-lg font-thin" placeholder="Email Address">
+                    <button type="button" class="bg-emerald-600 text-lg text-white font-thin px-4 py-2 border border-gray-500 text-center">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/340c8ea4f7.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    </body>
+</html>
