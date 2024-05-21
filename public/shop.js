@@ -53,9 +53,9 @@ img_parent.appendChild(ul);
 
 }
 
-// for(let index=0; index<imgOverlay.length; index++){
-//     imgOverlay[index].addEventListener('mouseout',mouseOut);
-// }
+for(let index=0; index<imgOverlay.length; index++){
+    imgOverlay[index].addEventListener('mouseout',mouseOut);
+}
 
 function mouseOut(event){
 
